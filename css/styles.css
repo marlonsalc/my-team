@@ -97,7 +97,7 @@ figure img {
 
 @media screen and (max-width: 1024px) {
     .container {
-        margin: 50px 5%;
+        margin: 50px auto;
     }
 
     .title {
@@ -154,7 +154,7 @@ figure img {
     .team-card {
         width: auto;
         height: auto;
-        min-width: 200px;
+        min-width: 180px;
     }
 
     .team-card:nth-child(even) {
@@ -169,7 +169,7 @@ figure img {
 
 
     figure img {
-        width: 10rem;
+        width: 9.8rem;
         height: 15rem;
         object-fit: cover;
     }
