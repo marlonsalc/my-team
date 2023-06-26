@@ -45,14 +45,13 @@ header {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .weare p {
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     line-height: 1.5;
-    margin-top: 20px;
 
 }
 
@@ -145,7 +144,7 @@ figure img {
         font-size: 1rem;
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
-        margin-top: 20px;
+
         margin-left: 15px;
     
     }
@@ -184,10 +183,17 @@ figure img {
         width: 100%;
     }
 
+    .team-card p {
+        font-size: 0.7rem;
+    }
+
     figure img {
-        width: 10rem;
-        height: 15rem;
+        width: 9rem;
+        height: 13rem;
         object-fit: cover;
     }
 
+    figure figcaption {
+        font-size: 0.7rem;
+    }
 }
