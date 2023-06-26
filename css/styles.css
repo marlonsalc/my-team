@@ -32,6 +32,7 @@ header {
     font-size: 1.2rem;
     font-family: 'Pt Serif', sans-serif;
     text-transform: uppercase;
+    margin: 20px
 
 }
 
@@ -80,7 +81,7 @@ header {
 .team-card p {
     /* transform: rotate(180deg); */
     font-size: 0.8rem;
-    font-family: 'PT Serif', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     text-transform: uppercase;
     white-space: nowrap;
     writing-mode: vertical-lr;
@@ -100,9 +101,6 @@ figure img {
         margin: 50px auto;
     }
 
-    .title {
-        width: 100%;
-    }
 
     .cards-container {
         display: grid;
@@ -169,12 +167,27 @@ figure img {
 
 
     figure img {
-        width: 9.8rem;
-        height: 15rem;
+        width: 13rem;
+        height: 18rem;
         object-fit: cover;
     }
 
     figure figcaption {
         font-size: 0.8rem;
     }
+}
+
+@media screen and (max-width: 576px) {
+    .title {
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    figure img {
+        width: 10rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+
 }
