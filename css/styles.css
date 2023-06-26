@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(173deg, rgba(0,0,0,0.7887487758775386) 0%, rgba(0,0,0,0.6402893921240371) 100%), url(../src/img/background.jpg);
+    font-family: 'Inter', sans-serif;
+    background-size: cover;
+    color: white;
+    min-height: 100vh;
+}
+
+
+.container {
+    margin: 50px 10%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.gold {
+    color: #9D8818;
+}
+
+.title {
+    width: 560px;
+    font-size: 1.2rem;
+    font-family: 'Pt Serif', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.weare {
+    width: 450px;
+}
+
+.weare h2 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.weare p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    margin-top: 20px;
+
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+}
+
+.team-card {
+    width: auto;
+    height: auto;
+    min-width: 290px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.team-card:nth-child(2), 
+.team-card:nth-child(5) 
+{
+    margin-top: 150px;
+    margin-bottom: 0;
+}
+
+.team-card p {
+    /* transform: rotate(180deg); */
+    font-size: 0.8rem;
+    font-family: 'PT Serif', sans-serif;
+    text-transform: uppercase;
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+
+}
+
+
+
+figure img {
+    width: 15rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        margin: 50px 5%;
+    }
+
+    .title {
+        width: 100%;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .team-card:nth-child(even) {
+        margin-top: 145px;
+        margin-bottom: 0;
+    }
+
+    .team-card:nth-child(odd) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 50px 5%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weare {
+        margin-top: 50px;
+    }
+
+    .team-card {
+        width: auto;
+        height: auto;
+        min-width: 200px;
+    }
+
+    .team-card:nth-child(even) {
+        margin-top: 145px;
+        margin-bottom: 0;
+    }
+
+    .team-card:nth-child(odd) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+    figure img {
+        width: 12rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+}
